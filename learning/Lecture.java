@@ -24,7 +24,12 @@ public class Lecture extends LibraryMember {
         System.out.println("ID Member : " + getMemberId());
         System.out.println("Kode Dosen: " + getLecturerCode());
         } else {
-            System.out.println("Maaf, buku " + book.getTitle() + " tidak tersedia untuk saat ini.");
+            System.out.println("Maaf, buku dengan data :");
+            System.out.println("Buku      : "+book.getTitle());
+            System.out.println("Pengarang : "+book.getAuthor());
+            System.out.println("Deskripsi : "+book.getDescription());
+            System.out.println("Harga     : "+book.getPrice());
+            System.out.println("Tidak Tersedia, Silahkan Pilih Buku yang lain.");
         }
     }
 
